@@ -10,4 +10,6 @@ VOLUME [ "/app/static/images" ]
 
 RUN pipenv install --system --deploy
 
+EXPOSE 5000
+
 CMD [ "python", "app.py" ]
